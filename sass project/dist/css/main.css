@@ -139,6 +139,14 @@
   transition-delay: 0.55s;
 }
 
+.about {
+  padding-bottom: 2rem;
+}
+.about__bio0-iamge {
+  height: 50vh;
+  width: 100%;
+}
+
 body {
   background: #272727;
   color: #fff;
@@ -156,6 +164,10 @@ h3 {
 a {
   color: #fff;
   text-decoration: none;
+}
+
+.text-scondary {
+  color: #ff652f;
 }
 
 header {
