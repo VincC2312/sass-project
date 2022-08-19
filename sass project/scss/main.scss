@@ -2,6 +2,7 @@
 @import "home";
 @import "menu";
 @import "about";
+
 body {
   background: $primary-color;
   color: set-text-color($primary-color);
@@ -20,7 +21,7 @@ a {
   text-decoration: none;
 }
 
-.text-scondary {
+.text-secondary {
   color: $secondary-color;
 }
 header {
