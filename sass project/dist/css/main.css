@@ -215,6 +215,52 @@
   grid-template-columns: 1fr;
   gap: 2rem;
 }
+.projects img {
+  width: 100%;
+}
+.projects__item {
+  position: relative;
+  border-bottom: 5px solid #ff652f;
+  overflow: hidden;
+  cursor: pointer;
+}
+.projects__item::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: #ff652f;
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+}
+.projects__item:hover::after {
+  top: 0;
+  opacity: 0.7;
+}
+.projects__item:hover .projects__btn {
+  opacity: 1;
+}
+.projects__btns {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+  display: grid;
+  align-items: center;
+  text-align: center;
+  grid-template-columns: repeat(2, 1fr);
+}
+.projects__btn {
+  opacity: 0;
+  color: #000;
+  transition: all 0.5s ease-in-out;
+}
+.projects__btn:hover {
+  color: #fff;
+}
 .projects .social-icons {
   display: flex;
   flex-direction: column;
